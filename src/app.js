@@ -11,6 +11,7 @@ app.use(express.text());
 app.use(express.urlencoded(true));
 app.use(morgan());
 app.use(cors());
+app.use(express.static("public"));
 
 app.use(taskRoutes);
 

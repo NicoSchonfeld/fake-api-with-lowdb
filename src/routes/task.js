@@ -11,7 +11,7 @@ import {
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.send("Endpoint: /tasks");
+  res.sendFile("index.html", { root: path.join(__dirname, "public") });
 });
 
 router.get("/tasks", getTasks);
