@@ -13,7 +13,7 @@ export const createConnection = async () => {
 
   await db.read();
 
-  db.data ||= { tasks: [] };
+  /* db.data ||= { tasks: [] }; */
 
   await db.write();
 };
